@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact & Feedback</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #fefce8;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background-color: #fefce8;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      color: #854d0e;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 0.3rem;
+      color: #78350f;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin-bottom: 1rem;
+      border: 1px solid #835a02;
+      border-radius: 0.5rem;
+      background-color: #ffeace;
+      font-size: 1rem;
+    }
+
+    .small-button {
+      background-color: #e6af40;
+      color: #fff;
+      padding: 0.4rem 1.5rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 9999px;
+      margin: 1rem auto;
+      display: block;
+      transition: background-color 0.3s ease;
+    }
+
+    .small-button:hover {
+      background-color: #ab8b50;
+    }
+
+    .contact-info {
+      margin-top: 2rem;
+      font-size: 0.95rem;
+      text-align: center;
+      color: #825e20;
+    }
+
+    .contact-info p {
+      margin: 0.4rem 0;
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      input, textarea {
+        font-size: 0.95rem;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>We’d Love Your Feedback</h1>
+
+    <form>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" placeholder="Enter your name">
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" placeholder="Enter your email">
+
+      <label for="message">Your Feedback</label>
+      <textarea id="message" rows="5" placeholder="Share your thoughts or suggestions..."></textarea>
+
+      <button type="submit" class="small-button">Send</button>
+    </form>
+
+    <div class="contact-info">
+      <p>📞 +91 9876543210</p>
+      <p>📧 satvikfoodapp@gmail.com</p>
+      <p>📸 Instagram: @satvik.soul</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+

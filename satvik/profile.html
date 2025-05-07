@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #fff7ed;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 1.5rem;
+      color: #4b5563;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background-color: #fefce8;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #854d0e;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .info-box {
+      margin-bottom: 1.25rem;
+    }
+
+    .label {
+      font-weight: bold;
+      color: #78350f;
+    }
+
+    .update-btn {
+      background-color: #facc15;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 9999px;
+      font-weight: bold;
+      color: #78350f;
+      cursor: pointer;
+      display: block;
+      margin: 1.5rem auto 0;
+      transition: background-color 0.3s ease;
+    }
+
+    .update-btn:hover {
+      background-color: #eab308;
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      .update-btn {
+        font-size: 0.95rem;
+      }
+
+      .info-box p, .info-box li {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>User Dashboard</h1>
+
+    <div class="info-box">
+      <p><span class="label">Name:</span> Iqra Hamdule</p>
+      <p><span class="label">Age:</span> 21</p>
+    </div>
+
+    <div class="info-box">
+      <p><span class="label">Saved Recipes:</span></p>
+      <ul class="list-disc list-inside ml-4">
+        <li>Moong Dal Chilla</li>
+        <li>Vegetable Khichdi</li>
+      </ul>
+    </div>
+
+    <div class="info-box">
+      <p><span class="label">Preferences Saved:</span> Acidity, Mild flavor</p>
+    </div>
+
+    <div class="info-box">
+      <p><span class="label">Health Profile Summary:</span> You’ve selected recipes ideal for acidity and prefer mild flavors. Your food is aligned with Satvik principles for better digestion.</p>
+    </div>
+
+    <a href="preferences.html"><button class="update-btn">Update Preferences</button></a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+

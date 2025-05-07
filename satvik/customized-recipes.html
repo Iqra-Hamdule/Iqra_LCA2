@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recipes for Acidity Relief</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #f0fdf4;
+      font-family: sans-serif;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #166534;
+      margin-bottom: 2rem;
+    }
+
+    .back-button {
+      background-color: #dcfce7;
+      color: #166534;
+      padding: 0.5rem 1.5rem;
+      border-radius: 9999px;
+      font-weight: bold;
+      border: none;
+      margin-bottom: 2rem;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .card {
+      width: 300px;
+      background-color: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      text-align: left;
+      transition: 0.3s ease;
+      margin-bottom: 2rem; /* Ensure spacing between rows of cards */
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Enhanced hover effect */
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 1rem;
+    }
+
+    .card-title {
+      font-weight: bold;
+      color: #14532d;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-text {
+      font-size: 0.875rem;
+      color: #475569;
+    }
+
+    /* Mobile and tablet responsiveness */
+    @media (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        width: 90%; /* Make the cards take up more space on smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <a href="preferences.html" class="back-button">← Back to Preferences</a>
+
+    <h1 class="title">Recipes Favourable to Your Preference</h1>
+
+    <div class="cards">
+      <!-- Card 1 -->
+      <a href="recipe-detail.html" class="card">
+        <img src="chilla-2.jpg" alt="Moong Dal Chilla">
+        <div class="card-body">
+          <div class="card-title">Moong Dal Chilla</div>
+          <div class="card-text">Light and soothing pancakes, good for digestion.</div>
+        </div>
+      </a>
+
+      <!-- Card 2 -->
+      <a href="recipe-detail.html" class="card">
+        <img src="sattu.jpg" alt="Sattu Drink">
+        <div class="card-body">
+          <div class="card-title">Sattu Drink</div>
+          <div class="card-text">Cooling and protein-rich, helps reduce heat in the body.</div>
+        </div>
+      </a>
+
+      <!-- Card 3 -->
+      <a href="recipe-detail.html" class="card">
+        <img src="kanji.jpg" alt="Rice Kanji">
+        <div class="card-body">
+          <div class="card-title">Rice Kanji</div>
+          <div class="card-text">Easily digestible, soothing for the stomach lining.</div>
+        </div>
+      </a>
+
+      <!-- Card 4 -->
+      <a href="recipe-detail.html" class="card">
+        <img src="banana.webp" alt="Banana Smoothie">
+        <div class="card-body">
+          <div class="card-title">Banana Smoothie</div>
+          <div class="card-text">Naturally sweet and alkaline, prevents acid reflux.</div>
+        </div>
+      </a>
+
+      <!-- Card 5 -->
+      <a href="recipe-detail.html" class="card">
+        <img src="lauki.webp" alt="Lauki Juice">
+        <div class="card-body">
+          <div class="card-title">Lauki Juice</div>
+          <div class="card-text">Cooling effect, flushes out excess acidity and toxins.</div>
+        </div>
+      </a>
+
+      <!-- Card 6 -->
+      <a href="recipe-detail.html" class="card">
+        <img src="sabudana-khichdi.avif" alt="Sabudana Khichdi">
+        <div class="card-body">
+          <div class="card-title">Sabudana Khichdi</div>
+          <div class="card-text">Gentle on the gut and light on the stomach, yet filling.</div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

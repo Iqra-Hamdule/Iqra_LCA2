@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Satvik Diet App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #fefcf7;
+      font-family: sans-serif;
+      color: #374151;
+    }
+
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      background-color: #ffffff;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    @media (min-width: 768px) {
+      .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    .nav-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #15803d;
+      margin-bottom: 0.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .nav-title {
+        margin-bottom: 0;
+      }
+    }
+
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      font-size: 0.9rem;
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      .nav-links {
+        flex-direction: row;
+        gap: 1.5rem;
+      }
+    }
+
+    .nav-link:hover {
+      color: #16a34a;
+    }
+
+    .hero-section {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+      gap: 2.5rem;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .hero-section {
+        flex-direction: row;
+        text-align: left;
+        padding: 4rem 5rem;
+      }
+    }
+
+    .hero-heading {
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: #166534;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+    .hover-glow {
+  box-shadow: 0 0 15px #34d399;
+  transform: scale(1.05);
+}
+
+
+    @media (min-width: 768px) {
+      .hero-heading {
+        font-size: 3rem;
+      }
+    }
+
+    .highlight {
+      color: #fb923c;
+    }
+
+    .hero-desc {
+      font-size: 1.1rem;
+      color: #4b5563;
+      margin-bottom: 1.5rem;
+    }
+
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+    }
+
+    @media (min-width: 768px) {
+      .button-group {
+        justify-content: flex-start;
+      }
+    }
+
+    .btn {
+      padding: 0.5rem 1.5rem;
+      border-radius: 9999px;
+      color: white;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      font-size: 0.9rem;
+    }
+
+    .btn-green {
+      background-color: #4ade80;
+    }
+
+    .btn-green:hover {
+      background-color: #22c55e;
+      box-shadow: 0 0 15px rgba(157, 237, 194, 0.6);
+      transform: translateY(-2px);
+    }
+
+    .btn-orange {
+      background-color: #fdba74;
+    }
+
+    .btn-orange:hover {
+      background-color: #fb923c;
+      box-shadow: 0 0 15px rgba(251, 191, 36, 0.5);
+      transform: translateY(-2px);
+    }
+
+    .hero-image {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      transition: all 0.4s ease;
+    }
+
+    .hero-image:hover {
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.875rem;
+      color: #6b7280;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-title">SatvikEats</div>
+    <div class="nav-links">
+      <a href="#" class="nav-link"><u>Home</u></a>
+      <a href="feedback.html" class="nav-link">Contact</a>
+      <a href="profile.html" class="nav-link">Profile</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <!-- Text Content -->
+    <div class="hero-text">
+      <h1 class="hero-heading" id="hero-heading">
+        Embrace <span class="highlight">Balance</span><br/> with Satvik Food
+      </h1>
+      <p class="hero-desc">
+        A calming lifestyle begins on your plate. Explore pure and mindful recipes that nourish your body, mind, and spirit.
+      </p>
+      <div class="button-group">
+        <a href="recipes.html" class="btn btn-green">Explore Recipes</a>
+        <a href="satvik-info.html" class="btn btn-orange">Know About Satvik</a>
+        <a href="preferences.html" class="btn btn-orange">Personalize Your Food</a>
+      </div>
+    </div>
+
+    <!-- Image -->
+    <img 
+      src="image-1.png"
+      alt="Satvik Food" 
+      class="hero-image" />
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; 2025 SatvikEats — Taste the purity.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

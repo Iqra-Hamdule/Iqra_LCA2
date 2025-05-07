@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Satvik Breakfasts</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #fdfcf6;
+      font-family: 'Segoe UI', sans-serif;
+      color: #374151;
+    }
+
+    .header {
+      text-align: center;
+      padding: 3rem 1rem 1.5rem;
+    }
+
+    .header h1 {
+      font-size: 2.25rem;
+      color: #166534;
+      font-weight: bold;
+    }
+
+    .header p {
+      font-size: 1rem;
+      color: #64748b;
+      margin-bottom: 2rem;
+    }
+
+    .search-box {
+      max-width: 500px;
+      margin: auto;
+      margin-bottom: 2.5rem;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border-radius: 9999px;
+      border: 1px solid #cbd5e1;
+      background-color: #ffffff;
+      font-size: 1rem;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .search-input:focus {
+      border-color: #14532d;
+    }
+
+    .cards {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+      transition: 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 1rem;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #14532d;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-text {
+      font-size: 0.875rem;
+      color: #475569;
+    }
+
+    .button-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .more-button {
+      background-color: #d9f99d;
+      color: #365314;
+      padding: 0.5rem 1.25rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .more-button:hover {
+      background-color: #bef264;
+    }
+
+    @media (max-width: 640px) {
+      .header h1 {
+        font-size: 2rem;
+      }
+
+      .card-title {
+        font-size: 1rem;
+      }
+
+      .card-text {
+        font-size: 0.8rem;
+      }
+
+      .more-button {
+        font-size: 0.8rem;
+        padding: 0.4rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Satvik Breakfasts</h1>
+    <p>Start your day with light, sattvic nourishment.</p>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search breakfast recipes..." class="search-input" />
+    </div>
+  </div>
+
+  <div class="cards">
+    <!-- Moong Dal Chilla -->
+    <a href="recipe-detail.html" class="card">
+      <img src="chilla.jpg" alt="Moong Dal Chilla">
+      <div class="card-body">
+        <div class="card-title">Moong Dal Chilla</div>
+        <div class="card-text">Protein-packed pancakes made from yellow moong dal.</div>
+      </div>
+    </a>
+
+    <!-- Fruit Bowl -->
+    <a href="recipe-detail.html" class="card">
+      <img src="fruit and nut.jpg" alt="Fruit Bowl">
+      <div class="card-body">
+        <div class="card-title">Fruit & Nut Bowl</div>
+        <div class="card-text">Fresh banana, apple, soaked almonds & raisins.</div>
+      </div>
+    </a>
+
+    <!-- Sabudana Khichdi -->
+    <a href="recipe-detail.html" class="card">
+      <img src="sabudana-khichdi.avif" alt="Sabudana Khichdi" >
+      <div class="card-body">
+        <div class="card-title">Sabudana Khichdi</div>
+        <div class="card-text">Sago pearls with peanuts and ghee – light & filling.</div>
+      </div>
+    </a>
+
+    <!-- Lauki Thepla -->
+    <a href="recipe-detail.html" class="card">
+      <img src="lauki-thepla.jpg" alt="Lauki Thepla">
+      <div class="card-body">
+        <div class="card-title">Lauki Thepla</div>
+        <div class="card-text">Bottle gourd flatbreads with gentle spices.</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="button-wrapper">
+    <a href="#" class="more-button">More Recipes</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
